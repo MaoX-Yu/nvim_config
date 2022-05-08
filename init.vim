@@ -38,11 +38,15 @@ nmap <Leader>wq :wq<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>Q :q!<CR>
 nmap <Leader>q :q<CR>
+nmap <Leader>p "+p
+vnoremap Y "+y
 
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()
 
