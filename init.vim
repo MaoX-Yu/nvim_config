@@ -41,7 +41,7 @@ nmap <Leader>q :q<CR>
 nmap <Leader>p "+p
 vnoremap Y "+y
 
-"============ Plugin Install ============
+"==================== Plugin Install ====================
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
@@ -51,7 +51,7 @@ Plug 'theniceboy/nvim-deus'
 
 call plug#end()
 
-"============ Color Scheme ============
+"==================== Color Scheme ====================
 set t_Co=256
 set termguicolors
 
