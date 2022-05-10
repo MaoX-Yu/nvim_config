@@ -21,7 +21,7 @@ set nu
 set relativenumber
 set nocompatible
 syntax on
-set mouse=a
+set mouse+=a
 set wrap
 set showmatch
 set showcmd
@@ -41,14 +41,23 @@ nmap <Leader>q :q<CR>
 nmap <Leader>p "+p
 vnoremap Y "+y
 
+"============ Plugin Install ============
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
-Plug 'connorholyday/vim-snazzy'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'ajmwagar/vim-deus'
 
 call plug#end()
 
-let g:SnazzyTransparent = 1
-color snazzy
+"============ Color Scheme ============
+set t_Co=256
+set termguicolors
+
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+set background=dark    " Setting dark mode
+colorscheme deus
+let g:deus_termcolors=256
