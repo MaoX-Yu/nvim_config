@@ -44,10 +44,10 @@ vnoremap Y "+y
 "==================== Plugin Install ====================
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'vim-airline/vim-airline'
+Plug 'liuchengxu/eleline.vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
-Plug 'theniceboy/nvim-deus'
+Plug 'ajmwagar/vim-deus'
 
 call plug#end()
 
