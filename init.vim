@@ -47,7 +47,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
-Plug 'ajmwagar/vim-deus'
+Plug 'theniceboy/nvim-deus'
 
 call plug#end()
 
