@@ -31,6 +31,7 @@ set incsearch
 set ignorecase
 set smartcase
 
+"==================== Keyboard Map ====================
 inoremap jj <esc>
 noremap <space> :
 let mapleader=";"
@@ -40,6 +41,8 @@ nmap <Leader>Q :q!<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>p "+p
 vnoremap Y "+y
+noremap J 5j
+noremap K 5k
 
 "==================== Plugin Install ====================
 call plug#begin('~/.config/nvim/plugged')
