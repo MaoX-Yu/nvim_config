@@ -47,7 +47,8 @@ noremap K 5k
 "==================== Plugin Install ====================
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'liuchengxu/eleline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'ajmwagar/vim-deus'
@@ -64,3 +65,15 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set background=dark    " Setting dark mode
 colorscheme deus
 let g:deus_termcolors=256
+
+"==================== Airline ====================
+set laststatus=2    " 始终显示状态栏
+let g:airline_theme='deus'
+let g:airline#extensions#tabline#enabled=1    " 开启 tab 栏
+let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+let g:airline#extensions#tabline#show_tab_nr = 1
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#tabline#buffer_nr_show = 0
+let g:airline#extensions#tabline#fnametruncate = 16
+let g:airline#extensions#tabline#fnamecollapse = 2
+let g:airline#extensions#tabline#buffer_idx_mode = 1
