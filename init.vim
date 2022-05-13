@@ -44,13 +44,20 @@ vnoremap Y "+y
 noremap J 5j
 noremap K 5k
 
+" Nvim Tree
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+
 "==================== Plugin Install ====================
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+
 Plug 'ajmwagar/vim-deus'
 
 call plug#end()
@@ -70,6 +77,7 @@ let g:deus_termcolors=256
 set laststatus=2    " 始终显示状态栏
 let g:airline_theme='deus'
 
+" tabline
 let g:airline#extensions#tabline#enabled=1    " 开启 tab 栏
 let g:airline#extensions#tabline#tab_nr_type = 1    " tab number
 let g:airline#extensions#tabline#show_tab_nr = 1
@@ -78,3 +86,6 @@ let g:airline#extensions#tabline#buffer_nr_show = 0
 let g:airline#extensions#tabline#fnametruncate = 16
 let g:airline#extensions#tabline#fnamecollapse = 2
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+"==================== Nvim Tree ====================
+lua require'nvim-tree'.setup {}
