@@ -30,6 +30,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set expandtab
+set tabstop=4
 
 "==================== Keyboard Map ====================
 inoremap jj <esc>
@@ -47,7 +49,13 @@ noremap K 5k
 " Nvim Tree
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
+nnoremap <leader>f :NvimTreeFindFile<CR>
+
+" quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 "==================== Plugin Install ====================
 call plug#begin('~/.config/nvim/plugged')
