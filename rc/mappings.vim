@@ -1,14 +1,17 @@
 inoremap jj <esc>
 noremap <space> :
+vnoremap Y "+y
+noremap J 5j
+noremap K 5k
+noremap n nzz
+noremap N Nzz
+
 let mapleader=";"
 nmap <Leader>wq :wq<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>Q :q!<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>p "+p
-vnoremap Y "+y
-noremap J 5j
-noremap K 5k
 
 " Nvim Tree
 nnoremap <C-n> :NvimTreeToggle<CR>
