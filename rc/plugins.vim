@@ -11,6 +11,9 @@ Plug 'kyazdani42/nvim-tree.lua'
 " colorscheme
 Plug 'ajmwagar/vim-deus'
 
+" welcome page
+Plug 'goolord/alpha-nvim'
+
 call plug#end()
 
 "==================== Airline ====================
@@ -29,3 +32,6 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 
 "==================== Nvim Tree ====================
 lua require'nvim-tree'.setup {}
+
+"==================== Alpha ====================
+lua require'alpha'.setup(require'alpha.themes.startify'.config)
