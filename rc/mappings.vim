@@ -27,3 +27,4 @@ nnoremap <C-l> <C-w>l
 " switch buffer
 nnoremap E :bn<CR>
 nnoremap W :bp<CR>
+nnoremap <leader>d :bd<CR>
