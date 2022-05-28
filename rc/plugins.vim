@@ -14,6 +14,12 @@ Plug 'ajmwagar/vim-deus'
 " welcome page
 Plug 'goolord/alpha-nvim'
 
+" coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" win shift
+Plug 'sindrets/winshift.nvim'
+
 call plug#end()
 
 "==================== Airline ====================

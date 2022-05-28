@@ -13,7 +13,7 @@ nmap <Leader>Q :q!<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>p "+p
 
-" Nvim Tree
+" nvim tree plugin
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>f :NvimTreeFindFile<CR>
@@ -28,3 +28,6 @@ nnoremap <C-l> <C-w>l
 nnoremap E :bn<CR>
 nnoremap W :bp<CR>
 nnoremap <leader>d :bd<CR>
+
+" win shift plugin
+nnoremap <C-w>m :WinShift<CR>
