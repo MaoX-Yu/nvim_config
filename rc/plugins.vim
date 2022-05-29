@@ -47,6 +47,7 @@ let g:coc_global_extensions=[
     \'coc-marketplace',
     \'coc-vimlsp',
     \'coc-json',
+    \'coc-pairs',
     \]
 
 " highlight the symbol and its references when holding the cursor.
