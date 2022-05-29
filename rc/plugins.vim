@@ -41,3 +41,13 @@ lua require'nvim-tree'.setup {}
 
 "==================== Alpha ====================
 lua require'alpha'.setup(require'alpha.themes.startify'.config)
+
+"==================== Coc Nvim ====================
+let g:coc_global_extensions=[
+    \'coc-marketplace',
+    \'coc-vimlsp',
+    \'coc-json',
+    \]
+
+" highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')

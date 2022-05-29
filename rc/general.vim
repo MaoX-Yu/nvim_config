@@ -12,7 +12,11 @@ set incsearch
 set ignorecase
 set smartcase
 set expandtab
-set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set hidden
+set updatetime=100
+set shortmess+=c
 
 set t_Co=256
 set termguicolors
