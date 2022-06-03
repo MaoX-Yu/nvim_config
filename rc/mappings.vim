@@ -13,9 +13,9 @@ nmap <Leader>Q :q!<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>p "+p
 
-"===
-"=== nvim tree plugin
-"===
+" ===
+" === nvim tree plugin
+" ===
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
@@ -31,14 +31,14 @@ nnoremap E :bn<CR>
 nnoremap W :bp<CR>
 nnoremap <leader>d :bd<CR>
 
-"===
-"=== win shift plugin
-"===
+" ===
+" === win shift plugin
+" ===
 nnoremap <C-w>m :WinShift<CR>
 
-"===
-"=== coc plugin
-"===
+" ===
+" === coc plugin
+" ===
 " use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
