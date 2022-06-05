@@ -5,6 +5,8 @@ noremap J 5j
 noremap K 5k
 noremap n nzz
 noremap N Nzz
+nnoremap <C-a> ggvG$
+inoremap <C-a> <esc>ggvG$
 
 let mapleader=";"
 nmap <Leader>wq :wq<CR>
