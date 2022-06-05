@@ -20,6 +20,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " win shift
 Plug 'sindrets/winshift.nvim'
 
+" ranger
+Plug 'kevinhwang91/rnvimr'
+
 call plug#end()
 
 " ===

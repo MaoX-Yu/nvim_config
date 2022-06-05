@@ -16,9 +16,9 @@ nmap <Leader>p "+p
 " ===
 " === nvim tree plugin
 " ===
-nnoremap <C-n> :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
+nnoremap <silent> <leader>m :NvimTreeToggle<CR>
+nnoremap <silent> <leader>r :NvimTreeRefresh<CR>
+nnoremap <silent> <leader>n :NvimTreeFindFile<CR>
 
 " quicker window movement
 nnoremap <C-j> <C-w>j
@@ -110,3 +110,9 @@ nmap <leader>x  <Plug>(coc-fix-current)
 
 " run the Code Lens action on the current line.
 nmap <leader>cl  <Plug>(coc-codelens-action)
+
+" ===
+" === rnvimr plugin
+" ===
+nnoremap <silent> <C-n> :RnvimrToggle<CR>
+tnoremap <silent> <C-n> <C-\><C-n>:RnvimrToggle<CR>
