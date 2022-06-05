@@ -23,6 +23,9 @@ Plug 'sindrets/winshift.nvim'
 " ranger
 Plug 'kevinhwang91/rnvimr'
 
+" snippets
+Plug 'honza/vim-snippets'
+
 call plug#end()
 
 " ===
@@ -60,6 +63,7 @@ let g:coc_global_extensions=[
     \'coc-json',
     \'coc-pairs',
     \'coc-prettier',
+    \'coc-snippets',
     \]
 
 " highlight the symbol and its references when holding the cursor.
