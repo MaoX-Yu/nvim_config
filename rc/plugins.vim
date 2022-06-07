@@ -9,7 +9,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " colorscheme
-Plug 'ajmwagar/vim-deus'
+"Plug 'ajmwagar/vim-deus'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 " welcome page
 Plug 'goolord/alpha-nvim'
