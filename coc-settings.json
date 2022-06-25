@@ -51,5 +51,8 @@
     "snippets.ultisnips.directories": [
         "$HOME/.config/nvim/snippets/",
         "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
+    ],
+    "snippets.textmateSnippetsRoots": [
+        "$HOME/.config/nvim/plugged/vscode-unity-code-snippets/snippets/"
     ]
 }

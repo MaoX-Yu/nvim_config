@@ -27,6 +27,9 @@ Plug 'kevinhwang91/rnvimr'
 " snippets
 Plug 'honza/vim-snippets'
 
+" unity
+Plug 'kleber-swf/vscode-unity-code-snippets'
+
 call plug#end()
 
 " ===
