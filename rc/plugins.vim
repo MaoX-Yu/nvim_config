@@ -33,6 +33,10 @@ Plug 'kleber-swf/vscode-unity-code-snippets'
 " sudo write
 Plug 'lambdalisue/suda.vim'
 
+" CSharp
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'ctrlpvim/ctrlp.vim' , { 'for': ['cs', 'vim-plug'] }
+
 call plug#end()
 
 " ===
@@ -71,6 +75,7 @@ let g:coc_global_extensions=[
     \'coc-pairs',
     \'coc-prettier',
     \'coc-snippets',
+    \'coc-omnisharp',
     \]
 
 " highlight the symbol and its references when holding the cursor.
