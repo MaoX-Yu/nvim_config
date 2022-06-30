@@ -30,6 +30,9 @@ Plug 'honza/vim-snippets'
 " unity
 Plug 'kleber-swf/vscode-unity-code-snippets'
 
+" sudo write
+Plug 'lambdalisue/suda.vim'
+
 call plug#end()
 
 " ===
