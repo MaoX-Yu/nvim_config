@@ -39,6 +39,13 @@ Plug 'lambdalisue/suda.vim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'ctrlpvim/ctrlp.vim' , { 'for': ['cs', 'vim-plug'] }
 
+" git
+"Plug 'airblade/vim-gitgutter'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-lua/plenary.nvim'    " diffview dep
+Plug 'sindrets/diffview.nvim'
+Plug 'kdheepak/lazygit.nvim'
+
 call plug#end()
 
 " ===
@@ -88,3 +95,10 @@ let g:coc_global_extensions=[
 
 " highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" ===
+" === Gitsigns
+" ===
+lua << EOF
+require('gitsigns').setup {}
+EOF
