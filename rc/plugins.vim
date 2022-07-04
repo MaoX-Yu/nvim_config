@@ -48,6 +48,9 @@ Plug 'goolord/alpha-nvim'
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" View and search LSP symbols, tags
+Plug 'liuchengxu/vista.vim'
+
 " win shift
 Plug 'sindrets/winshift.nvim'
 
@@ -62,6 +65,9 @@ Plug 'lambdalisue/suda.vim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'kdheepak/lazygit.nvim'
+
+" in Visual mode, type i' to select all text in '', or type i) i] i} ip
+Plug 'gcmt/wildfire.vim'
 
 call plug#end()
 
