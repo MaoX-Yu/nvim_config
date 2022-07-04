@@ -1,18 +1,46 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" ==================== Dependence ====================
+
+" diffview dep
+Plug 'nvim-lua/plenary.nvim'
+
+" icon
+Plug 'kyazdani42/nvim-web-devicons'
+
+" ==================== Beauty ====================
+
+" colorscheme
+"Plug 'ajmwagar/vim-deus'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+
 " stateline
 Plug 'nvim-lualine/lualine.nvim'
 
 " bufferline
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
-" nvim tree
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
+" rainbow brackets
+Plug 'luochen1990/rainbow'
 
-" colorscheme
-"Plug 'ajmwagar/vim-deus'
-Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+" ==================== Code supports ====================
+
+" CSharp
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'ctrlpvim/ctrlp.vim' , { 'for': ['cs', 'vim-plug'] }
+
+" ==================== Snippets ====================
+
+" snippets
+Plug 'honza/vim-snippets'
+
+" unity
+Plug 'kleber-swf/vscode-unity-code-snippets'
+
+" ==================== Tools ====================
+
+" nvim tree
+Plug 'kyazdani42/nvim-tree.lua'
 
 " welcome page
 Plug 'goolord/alpha-nvim'
@@ -26,23 +54,12 @@ Plug 'sindrets/winshift.nvim'
 " ranger
 Plug 'kevinhwang91/rnvimr'
 
-" snippets
-Plug 'honza/vim-snippets'
-
-" unity
-Plug 'kleber-swf/vscode-unity-code-snippets'
-
 " sudo write
 Plug 'lambdalisue/suda.vim'
-
-" CSharp
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'ctrlpvim/ctrlp.vim' , { 'for': ['cs', 'vim-plug'] }
 
 " git
 "Plug 'airblade/vim-gitgutter'
 Plug 'lewis6991/gitsigns.nvim'
-Plug 'nvim-lua/plenary.nvim'    " diffview dep
 Plug 'sindrets/diffview.nvim'
 Plug 'kdheepak/lazygit.nvim'
 
@@ -102,3 +119,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 lua << EOF
 require('gitsigns').setup {}
 EOF
+
+" ===
+" === Rainbow
+" ===
+let g:rainbow_active = 1
