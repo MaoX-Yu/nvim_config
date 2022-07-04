@@ -118,3 +118,8 @@ nmap <leader>cl  <Plug>(coc-codelens-action)
 " ===
 nnoremap <silent> <C-n> :RnvimrToggle<CR>
 tnoremap <silent> <C-n> <C-\><C-n>:RnvimrToggle<CR>
+
+" ===
+" === vista plugin
+" ===
+nnoremap <silent> <leader>t :Vista<CR>
