@@ -69,6 +69,10 @@ Plug 'kdheepak/lazygit.nvim'
 " in Visual mode, type i' to select all text in '', or type i) i] i} ip
 Plug 'gcmt/wildfire.vim'
 
+" markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'mzlogin/vim-markdown-toc'
+
 call plug#end()
 
 " ===
