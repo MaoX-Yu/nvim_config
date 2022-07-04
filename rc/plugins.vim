@@ -90,7 +90,25 @@ EOF
 " === Bufferline
 " ===
 lua << EOF
-require('bufferline').setup {}
+require('bufferline').setup {
+    options = {
+        --separator_style = "padded_slant",
+        offsets = {
+            {
+                filetype = "NvimTree",
+                text = "File Explorer",
+                highlight = "Directory",
+                text_align = "center"
+            },
+            {
+                filetype = "vista",
+                text = "Outline",
+                highlight = "Directory",
+                text_align = "center"
+            }
+        }
+    }
+}
 EOF
 
 " ===
