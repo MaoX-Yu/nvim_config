@@ -39,6 +39,10 @@ Plug 'kleber-swf/vscode-unity-code-snippets'
 
 " ==================== Tools ====================
 
+" treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
+
 " nvim tree
 Plug 'kyazdani42/nvim-tree.lua'
 
@@ -126,7 +130,7 @@ require('alpha').setup (require'alpha.themes.startify'.config)
 EOF
 
 " ===
-" === CoC
+" === Coc
 " ===
 let g:coc_global_extensions=[
     \'coc-marketplace',
