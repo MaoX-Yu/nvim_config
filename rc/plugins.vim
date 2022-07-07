@@ -29,6 +29,10 @@ Plug 'luochen1990/rainbow'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'ctrlpvim/ctrlp.vim' , { 'for': ['cs', 'vim-plug'] }
 
+" markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'mzlogin/vim-markdown-toc'
+
 " ==================== Snippets ====================
 
 " snippets
@@ -58,8 +62,17 @@ Plug 'liuchengxu/vista.vim'
 " win shift
 Plug 'sindrets/winshift.nvim'
 
+" file navigation
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 " ranger
 Plug 'kevinhwang91/rnvimr'
+" changes the working directory to the project root
+Plug 'airblade/vim-rooter'
+" Vim code inspection plugin for finding definitions and references/usages
+Plug 'pechorin/any-jump.vim'
 
 " sudo write
 Plug 'lambdalisue/suda.vim'
@@ -72,10 +85,6 @@ Plug 'kdheepak/lazygit.nvim'
 
 " in Visual mode, type i' to select all text in '', or type i) i] i} ip
 Plug 'gcmt/wildfire.vim'
-
-" markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'mzlogin/vim-markdown-toc'
 
 call plug#end()
 
