@@ -145,6 +145,7 @@ let g:coc_global_extensions = [
     \ 'coc-marketplace',
     \ 'coc-vimlsp',
     \ 'coc-json',
+    \ 'coc-lua',
     \ 'coc-pairs',
     \ 'coc-prettier',
     \ 'coc-snippets',
@@ -173,7 +174,9 @@ let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 let g:vista_default_executive = 'ctags'
 let g:vista_executive_for = {
     \ 'cpp': 'coc',
-    \ 'php': 'coc',
+    \ 'cs': 'coc',
+    \ 'vim' : 'coc',
+    \ 'lua' : 'coc',
     \ }
 let g:vista_ctags_cmd = {
     \ 'haskell': 'hasktags -x -o - -c',
