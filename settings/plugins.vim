@@ -86,6 +86,9 @@ Plug 'kdheepak/lazygit.nvim'
 " in Visual mode, type i' to select all text in '', or type i) i] i} ip
 Plug 'gcmt/wildfire.vim'
 
+" auto pairs
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 " ===
@@ -146,10 +149,10 @@ let g:coc_global_extensions = [
     \ 'coc-vimlsp',
     \ 'coc-json',
     \ 'coc-lua',
-    \ 'coc-pairs',
     \ 'coc-prettier',
     \ 'coc-snippets',
     \ 'coc-omnisharp',
+    \ 'coc-translator',
     \ ]
 
 " highlight the symbol and its references when holding the cursor.
