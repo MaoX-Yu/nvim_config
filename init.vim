@@ -30,7 +30,7 @@ if g:islinux == 1
 endif
 
 " ==================== Source setting scripts ====================
-source ~/.config/nvim/rc/general.vim
-source ~/.config/nvim/rc/plugins.vim
-source ~/.config/nvim/rc/mappings.vim
-source ~/.config/nvim/rc/colors.vim
+source ~/.config/nvim/settings/general.vim
+source ~/.config/nvim/settings/plugins.vim
+source ~/.config/nvim/settings/mappings.vim
+source ~/.config/nvim/settings/colors.vim
